@@ -7,3 +7,4 @@ add_executable(skillbox64 c64/c64.c)
 
 add_executable(skillbox c55/c55.c)
 
+add_executable(skillbox74 c74/c74.c)
