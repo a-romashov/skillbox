@@ -1,7 +1,6 @@
 //
 // Created by Андрей on 19.10.2024.
 //
-#include <limits.h>
 #include <stdio.h>
 
 void task1() {
