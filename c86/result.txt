@@ -1,0 +1,11 @@
+-----
+variable address is 00000046befffbc4, value is 33.3
+variable address is 00000046befffbc4, value is 77.7
+-----
+5 11 33 -5 0
+-5 0 5 11 33
+-----
+15 22 55 -15 10
+avg = 17.40; med = 15; min = -15; max = 55
+
+Process finished with exit code 43
