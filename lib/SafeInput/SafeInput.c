@@ -8,7 +8,7 @@ void scanInteger(const char *mask, int *result, const char *errorMessage) {
     fgets(buffer, SAFE_SCAN_BUFFER_SIZE, stdin);
 
     while (!sscanf(buffer, mask, result)) {
-        printf(errorMessage);
+        printf("%s", errorMessage);
         fgets(buffer, SAFE_SCAN_BUFFER_SIZE, stdin);
     }
 }
