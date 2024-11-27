@@ -75,7 +75,6 @@ void printJournalStatistics(classJournal_t *journal) {
         int found = 0;
         // поиск нужной записи по ФИО
         for (int j = 0; j < uniqueStudentsCnt; j++) {
-            // сравнение адресов, т.к. копирования не происходит
 
             if (isStrEqual(studentsStats[j]->firstName, journal->students[i]->firstName)) {
                 if (isStrEqual(studentsStats[j]->lastName, journal->students[i]->lastName)) {
