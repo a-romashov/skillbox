@@ -12,7 +12,7 @@ void printInts(const int* array, const unsigned int size) {
 #include "stdlib.h"
 int* getIntArr(const unsigned int size) {
 
-    int *arr = calloc(size, sizeof(int*));
+    int *arr = calloc(size, sizeof(int));
     for (int i = 0; i < size; i++) {
         scanInteger("%d", arr + i, "try again\n");
     }
