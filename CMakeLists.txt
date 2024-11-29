@@ -29,3 +29,10 @@ add_executable(
         c116/library.c
         c116/library.h
 )
+add_executable(
+        skillbox125
+
+        c125/c125.c
+        lib/SafeInput/SafeInput.c
+        lib/SafeInput/SafeInput.h
+)
