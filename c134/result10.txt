@@ -2,7 +2,6 @@ Enter size of signal:
 10
 
 
-     |
      |  X XXXXXXXXXXXXXXX                                                 XXXXXXXXXXXXXXXX
      | XX  XXX XXXXX XX  XX                                               XX XXXXXXXXXX XXXXX
      X  X X   X      XXXXXX                                              XX X X XXX X  XX X X
@@ -15,8 +14,8 @@ Enter size of signal:
      | X                        XX                               X X XXXX X                 XXXXXXX X
      XX                   XXXX XXXX                             X  XXXXXX X                      X  XX
      |                    X    X  X                                XXXXXXX                   X  X XXXXXX
------X---------------------XXX-XX--X----------------------------XXX-XX-X-X---------------------XXX-XX----------
-     X                       XXXX XXXX                        X XXXXX XX                          XXXXXXXX
+     X                     XXX XX  X                            XXX XX X X                     XXX XX
+-----X-----------------------XXXX-XXXX------------------------X-XXXXX-XX--------------------------XXXXXXXX-----
      |                       XXXX X  X                       X XXX XXX                           XXX  X   X
      |                        XX X XX                       XX X  XXXX                            X   XX  X
      |                           X X  X X                   XX X XXX                               X  XX XX X
@@ -29,17 +28,16 @@ Enter size of signal:
      |                                XX XXXXXX X   XXXXX XX XX                                          X XXX
      |                                   XXXXXXXXXXXXX XXXXXX                                             XXXXX
      |                                    XXXXXXXXXXXXXX XX                                                  XX
+     |
 
 
 
 Process finished with exit code 0
 
-
 Enter size of signal:
 30
 
 
-     |
      |XXXXXX                XXXXXX                XXXXXXX               XXXXXXX                XXXXXX
      XXXXXXXX               XXXXXXX               XXXXXXX               XXXXXXX                XXXXXX
      XX X XXX              XXXXXXXX               XXXXXXXX             XXXXXXXXX              XXX XXXX
@@ -52,8 +50,8 @@ Enter size of signal:
      X        X          XXXX     XXX          X XX     X XX          XXX     XXXX          XXX     X XX
      X      XXX         XXXXX      XXX         XXXX     X X          XXXX     X XX         XXXX      X X
      |      XXX          XXX      XXXX        XXX       XXXX         XXX      XXXX         X XX      XXXX
------X------XXXX--------XXXX-------XX---------X-XX-------XX----------XXX-------XXXX--------XXXX-------XX-------
-     X       XXX        XXXX        XXX        XXX       XXXX       XXXX       XXXX       XXXX       XXXX
+     X      XXXX        XXXX       XX         X XX       XX          XXX       XXXX        XXXX       XX
+-----X-------XXX--------XXXX--------XXX--------XXX-------XXXX-------XXXX-------XXXX-------XXXX-------XXXX------
      |       XXX       XXXX        XXXX      XXXX        XXXX        XX        XX XX      XXXX         XXX
      |       XXX       XXXX         XXX       XXX         XXXX     XXXX           XX      XX X        XXXX
      |        XXX      XXX          XXXX     XXXX         XXXX     XXXX         XXX      XXXX         XXXX
@@ -66,6 +64,7 @@ Enter size of signal:
      |          XXXXXXXXX             XXXXXXXXX             XXXXXXXXX              XXX XXXX             XXXXXXX
      |           XXXXXXX              XXXXXXXX               XXXXXXX               XXXXXXXX              XXXXXX
      |           XXXXXX                XXXXXXX               XXXXXXX               XXXXXXX                XXXXX
+     |
 
 
 
@@ -75,7 +74,6 @@ Enter size of signal:
 6
 
 
-     |
      |     X XXXXXXXXXXXXXXXXXXXXXXXXX
      |   XXX   X XXX  XX X X X X XX    X X
      X    X   X     X          X  XXXXXXX
@@ -88,8 +86,8 @@ Enter size of signal:
      |  XX                                         XX                                                     X  X
      |XX                                XXX XX   XXX XX                                                 X   X
      |                                   X      X    X                                                       XX
------X------------------------------------X-X-X--X-X---X------------------------------------------------XX-X---
-     X                                       XXXX X   XXXX X                                        X  XXXXXXXX
+     X                                    X X X  X X   X                                                XX X
+-----X---------------------------------------XXXX-X---XXXX-X----------------------------------------X--XXXXXXXX
      |                                       XX X  X X    XX                                      XX  XX X   XX
      |                                         X X  X  X X                                      X XX X     XX
      |                                             XX   X   X   X                                XXX XX   XXXX
@@ -102,6 +100,7 @@ Enter size of signal:
      |                                                      XXXX  XXXXXXX X X       XX XX X  X XX X X
      |                                                           X X XXXXXXXXXXX X XXX  XXXXXXXXX X
      |                                                              XXXXXXXXXXXXXXXXXXXXXX XXXX
+     |
 
 
 

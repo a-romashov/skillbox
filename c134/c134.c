@@ -94,25 +94,27 @@ void paintSignal(const signal_t *signal) {
 
     char ** field = malloc(sizeof(char*) * sizeY);
     for (int i = 0; i < sizeY; i++) {
-        field[i] = malloc(sizeof(char) * sizeX);
+        field[sizeY - 1 - i] = malloc(sizeof(char) * sizeX);
         for (int j = 0; j < sizeX; j++) {
+
             if (i == getFieldIndex(sizeY, zeroY, 0, signal->size) && j == getFieldIndex(sizeX, zeroX, 0, signal->size)) {
-                field[i][j] = '+';
+                field[sizeY- 1 - i][j] = '+';
             } else if (i == getFieldIndex(sizeY, zeroY, 0, signal->size)) {
-                field[i][j] = '-';
+                field[sizeY - 1 - i][j] = '-';
             } else if (j == getFieldIndex(sizeX, zeroX, 0, signal->size)) {
-                field[i][j] = '|';
+                field[sizeY - i - 1][j] = '|';
             } else {
-                field[i][j] = ' ';
+                field[sizeY - i - 1][j] = ' ';
             }
         }
     }
+
 
     for (int i = 0; i < signal->size; i++) {
         unsigned int x = getFieldIndex(sizeX, zeroX, signal->points[i]->x, signal->size / (unsigned int)pow(10, SIGNAL_PRECISION_H));
         unsigned int y = getFieldIndex(sizeY, zeroY, signal->points[i]->y, SIGNAL_MULTIPLIER);
 
-        field[sizeY - y][x] = FIELD_CHAR;
+        field[sizeY - y - 1][x] = FIELD_CHAR;
     }
 
     printField(field, sizeX, sizeY);
