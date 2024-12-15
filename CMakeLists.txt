@@ -36,3 +36,10 @@ add_executable(
         lib/SafeInput/SafeInput.c
         lib/SafeInput/SafeInput.h
 )
+add_executable(
+        skillbox134
+
+        c134/c134.c
+        lib/SafeInput/SafeInput.c
+        lib/SafeInput/SafeInput.h
+)
