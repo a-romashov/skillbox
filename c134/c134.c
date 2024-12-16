@@ -4,10 +4,10 @@
 #include "math.h"
 
 
-#define NOISE_PERCENT 0
+#define NOISE_PERCENT 20
 #define SIGNAL_MULTIPLIER 10
-#define SIGNAL_PRECISION_H 2
-#define SIGNAL_PRECISION_V 2
+#define SIGNAL_PRECISION_H 1
+#define SIGNAL_PRECISION_V 1
 
 #define FIELD_SIZE_X 111
 #define FIELD_SIZE_Y 27
@@ -58,7 +58,7 @@ double getNoise() {
 
 double getSignalValue(const double alpha) {
     double precision = pow(10, SIGNAL_PRECISION_V);
-    return floor(SIGNAL_MULTIPLIER * sin(alpha + getNoise()) * precision) / precision;
+    return floor((SIGNAL_MULTIPLIER * sin(alpha) + getNoise()) * precision) / precision;
 }
 
 void printField(char **field, unsigned int sizeX, unsigned int sizeY) {
@@ -112,7 +112,7 @@ void paintSignal(const signal_t *signal) {
 
     for (int i = 0; i < signal->size; i++) {
         unsigned int x = getFieldIndex(sizeX, zeroX, signal->points[i]->x, signal->size / (unsigned int)pow(10, SIGNAL_PRECISION_H));
-        unsigned int y = getFieldIndex(sizeY, zeroY, signal->points[i]->y, SIGNAL_MULTIPLIER);
+        unsigned int y = getFieldIndex(sizeY, zeroY, signal->points[i]->y, SIGNAL_MULTIPLIER + SIGNAL_MULTIPLIER * NOISE_PERCENT / 100);
 
         field[sizeY - y - 1][x] = FIELD_CHAR;
     }
