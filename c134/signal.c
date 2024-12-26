@@ -4,14 +4,14 @@
 #include "stdio.h"
 
 double getNoise(const uint32_t noisePercent) {
-    return (rand() % SIGNAL_MULTIPLIER) / 100.0 * noisePercent;
+    return ((rand() % 2 == 0 ? 0 : 1) * rand() % SIGNAL_MULTIPLIER) / 100.0 * noisePercent;
 }
 
 double getSignalValue(const double alpha, uint32_t noisePercent) {
     double precision = pow(SIGNAL_PRECISION_M, SIGNAL_PRECISION_V);
     return floor(
             (
-                    SIGNAL_MULTIPLIER * sin(M_PI * alpha / 1.8) + getNoise(noisePercent)
+                    SIGNAL_MULTIPLIER * sin(M_PI_2 * alpha / SIGNAL_PRECISION_M) + getNoise(noisePercent)
             ) * precision
     ) / precision;
 }
@@ -109,6 +109,26 @@ void fillFieldBySignal(
     }
 }
 
+double getSumPeriod(signal_t *signal, uint32_t period, uint32_t index) {
+    double result = 0;
+    uint32_t half = period / 2;
+    uint32_t startAddon = index < half ? half - index : 0;
+    uint32_t endAddon = index + half > signal->size ? index + half - signal->size : 0;
+
+    uint32_t start = index - (half - startAddon);
+    uint32_t stop = index + (half - endAddon);
+
+    for (uint32_t i = start; i < stop; i++) {
+        result += signal->points[i]->y;
+    }
+    /**
+     * Компенсация
+     */
+    result += signal->points[index]->y * (startAddon + endAddon);
+
+    return result / period;
+}
+
 
 signal_t *getSignal(uint32_t size, uint32_t noisePercent) {
 
@@ -157,4 +177,26 @@ void freeSignal(signal_t *signal) {
     }
     free(signal->points);
     free(signal);
+}
+
+signal_t *filterSignal(signal_t *signal, uint32_t period) {
+
+    signal_t *result = malloc(sizeof(signal_t));
+    result->points = malloc(sizeof(point_t *) * signal->size);
+    result->size = signal->size;
+    result->height = signal->height;
+
+    for (int i = 0; i < signal->size; i++) {
+        result->points[i] = malloc(sizeof(point_t));
+        result->points[i]->x = signal->points[i]->x;
+        result->points[i]->y = signal->points[i]->y;
+    }
+
+    for (int i = 0; i < signal->size; i++) {
+        if (i) {
+            result->points[i]->y = getSumPeriod(signal, period, i);
+        }
+    }
+
+    return result;
 }

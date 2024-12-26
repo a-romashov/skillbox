@@ -1,0 +1,107 @@
+Clean signal
+
+
+     |         X                                         X                                         X
+     |       XX XX                                     XX XX                                     XX XX
+     |      X     X                                   X     X                                   X     X
+     |     X       X                                 X       X                                 X       X
+     |    X         X                               X         X                               X         X
+     |    X         X                               X         X                               X         X
+     |   X           X                             X           X                             X           X
+     |  X             X                           X             X                           X             X
+     |
+     |  X             X                           X             X                           X             X
+     | X               X                         X               X                         X               X
+     |X                 X                       X                 X                       X                 X
+     |
+     |X                 X                       X                 X                       X                 X
+     X                   X                     X                   X                     X                   X
+-----X--------------------X--------------------X--------------------X--------------------X--------------------
+     |                    X                   X                     X                   X
+     |                     X                 X                       X                 X
+     |
+     |                     X                 X                       X                 X
+     |                      X               X                         X               X
+     |                       X             X                           X             X
+     |                       X             X                           X             X
+     |                        X           X                             X           X
+     |                         X         X                               X         X
+     |                         X         X                               X         X
+     |                          X       X                                 X       X
+     |                           X     X                                   X     X
+     |                            XX XX                                     XX XX
+     |                             XXX                                       XXX
+
+
+Noised signal
+
+
+     |
+     |        X                                         X
+     |                                                    X                                      XX   X
+     |     XX  XXXX                                     XX XX                                  X  XXXXX
+     |      XX    X                                   XX      X                                 X
+     |             X                                XXX     XX                                X        X
+     |    X         X                               X                                                   X
+     |  X X                                                   XX                             X          X
+     |   X           XX                           XX                                                     XX
+     |                                                          X                           X
+     |X X             X                          XX             X X                                         X
+     |XX               X                                         X                         X               X
+     |                  X                       X                 X                       X
+     X                  X                       X                                         X                 X
+     X                   X                     X                   X                     X                   X
+-----+--------------------X--------------------X--------------------X-------------------X---------------------
+     |                                       XX                     X                  X
+     |                     X                                         X                X
+     |                     X                 X                       X                 X
+     |                      XX             XX                         X              X
+     |                                    X                            X
+     |                                     X                                         X
+     |                        XX                                        X          XX
+     |                         X         X                               X
+     |                          X     XXXX                               XXX   X  XX
+     |                           X XXX X                                   XX    X
+     |                            XX X                                       XXXX
+     |
+     |
+     |
+
+
+Filtered signal
+
+
+     |
+     |
+     |
+     |
+     |
+     |       XXXX                                       XXXXX                                     XXXXX
+     |      X   XXX                                    X    XX                                 XXX  X XX
+     |     X       XX                                XX       X                               X         X
+     |    X         X                               X         XX                              X         X
+     |   XX          XX                            X            X                            X           XX
+     |  X             X                           X             X                           X             XX
+     | XX              X                          X              X                          X               X
+     |X                 X                        X                X                        X
+     XX                 X                       X                 X                       X                 XX
+     X                   X                      X                  X                      X
+-----+--------------------X--------------------X--------------------X-------------------XX--------------------
+     |                     X                  X                      X                 X
+     |                      X                X                       X                 X
+     |                       X              X                         XX              X
+     |                       XX            X                           X             X
+     |                         X          X                             X           XX
+     |                         X         X                               X         X
+     |                          XX     XXX                                XX      XX
+     |                           XXXXXX                                     XX XXX
+     |                                                                        X
+     |
+     |
+     |
+     |
+     |
+
+
+
+Process finished with exit code 0

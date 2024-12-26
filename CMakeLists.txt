@@ -45,3 +45,10 @@ add_executable(
         lib/SafeInput/SafeInput.c
         lib/SafeInput/SafeInput.h
 )
+add_executable(
+        skillbox144
+        c144/c144.c
+
+        c134/signal.c
+        c134/signal.h
+)
