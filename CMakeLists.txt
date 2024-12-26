@@ -40,6 +40,8 @@ add_executable(
         skillbox134
 
         c134/c134.c
+        c134/signal.c
+        c134/signal.h
         lib/SafeInput/SafeInput.c
         lib/SafeInput/SafeInput.h
 )
