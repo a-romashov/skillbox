@@ -8,15 +8,21 @@
 int main() {
 
     signal_t *signalClean = getSignal(SIZE, 0);
-    signal_t *signalNoised = getSignal(SIZE, NOISE);
-    signal_t *signalFiltered = filterSignal(signalNoised, FILTER);
 
     printf("Clean signal\n");
     paintSignal(signalClean);
+    freeSignal(signalClean);
+
+    signal_t *signalNoised = getSignal(SIZE, NOISE);
     printf("Noised signal\n");
     paintSignal(signalNoised);
+
+    signal_t *signalFiltered = filterSignal(signalNoised, FILTER);
+    freeSignal(signalNoised);
+
     printf("Filtered signal\n");
     paintSignal(signalFiltered);
+    freeSignal(signalFiltered);
 
     return 0;
 }
