@@ -52,3 +52,11 @@ add_executable(
         c134/signal.c
         c134/signal.h
 )
+add_executable(
+        skillbox154
+        c154/c154.c
+        c154/scissorsPaperStone.c
+        c154/scissorsPaperStone.h
+        lib/SafeInput/SafeInput.c
+        lib/SafeInput/SafeInput.h
+)

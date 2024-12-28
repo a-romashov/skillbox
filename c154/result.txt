@@ -1,0 +1,120 @@
+ENTER MENU ITEM INDEX
+1) NEW GAME
+2) EXIT
+1
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+2
+Your choice is Scissors
+Computer choice is Paper
+you win
+---------------
+SCORE
+COMPUTER: 0 PLAYER: 1
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+2
+Your choice is Scissors
+Computer choice is Stone
+computer win
+---------------
+SCORE
+COMPUTER: 1 PLAYER: 1
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+2
+Your choice is Scissors
+Computer choice is Stone
+computer win
+---------------
+SCORE
+COMPUTER: 2 PLAYER: 1
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+2
+Your choice is Scissors
+Computer choice is Stone
+computer win
+---------------
+SCORE
+COMPUTER: 3 PLAYER: 1
+
+Amazed by your failure. Next time...
+ENTER MENU ITEM INDEX
+1) NEW GAME
+2) EXIT
+1
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+3
+Your choice is Stone
+Computer choice is Paper
+computer win
+---------------
+SCORE
+COMPUTER: 1 PLAYER: 0
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+1
+Your choice is Paper
+Computer choice is Paper
+draw
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+3
+Your choice is Stone
+Computer choice is Scissors
+you win
+---------------
+SCORE
+COMPUTER: 1 PLAYER: 1
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+2
+Your choice is Scissors
+Computer choice is Paper
+you win
+---------------
+SCORE
+COMPUTER: 1 PLAYER: 2
+
+Enter your choice:
+1) Paper
+2) Scissors
+3) Stone
+1
+Your choice is Paper
+Computer choice is Stone
+you win
+---------------
+SCORE
+COMPUTER: 1 PLAYER: 3
+
+Congratulation, you are win nothing.
+ENTER MENU ITEM INDEX
+1) NEW GAME
+2) EXIT
+2
+Goodbye!
+Process finished with exit code 0

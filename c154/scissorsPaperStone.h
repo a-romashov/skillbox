@@ -1,0 +1,6 @@
+#ifndef SKILLBOX_SCISSORS_PAPER_STONE_H
+#define SKILLBOX_SCISSORS_PAPER_STONE_H
+
+void startGame(unsigned int wins);
+
+#endif //SKILLBOX_SCISSORS_PAPER_STONE_H
